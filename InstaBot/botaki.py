@@ -51,17 +51,17 @@ class InstaBot:
         likeArea.click()
 
 
-username=input('Dwse to username sou: ')
-password=input('Dwse to password sou: ')
+username=input('Give your username: ')
+password=input('Give your password: ')
 
-link=input('Dwse to link pou thleis: ')
-num=int(input('posa sxolia theleis na kanei epanalhpsh: '))
+link=input('Give the url of the photo: ')
+num=int(input('how many same comments you want: '))
 sxolia=[]
 for i in range(num):
-    comment=input('dwse sxolio: ')
+    comment=input('Give one comment: ')
     sxolia.append(comment)
 
-time=int(input('dwse ta defterolpeta pou theleis na perimenei h efarmogh mexri to epomeno sxolio: '))
+time=int(input('give the seconds you want to wait the programm until the next comment: '))
 
 user=InstaBot(username , password)
 user.login()
